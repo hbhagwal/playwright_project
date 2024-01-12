@@ -1,0 +1,24 @@
+{
+  "name": "playwright_training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts":
+  {
+     "smoke_batch": "playwright test --config=UITest.config.js",
+     "regress_batch": "playwright test --config=playwright.config.js",
+     "indivisual_batch": "playwright test di.spec.js"
+   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.7"
+  },
+  "dependencies": {
+    "csv": "^6.3.6",
+    "csv-parse": "^5.5.3",
+    "xlsx": "^0.18.5"
+  }
+}
